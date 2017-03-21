@@ -3,10 +3,12 @@
 const program = require('commander');
 
 program
-  .version('1.0.0')
+  .version('0.0.1')
+  .usage('[options] <first_config> <second_config>')
   .description('Compares two configuration files and shows a difference.')
-  .usage('<first_config> <second_config>')
-  .option('-h, --help', 'output usage information')
-  .option('-V, --version', 'output the version number')
-  .option('-f, --format [type]', 'Output format')
+  .option('-f, --format [type]', 'output format')
   .parse(process.argv);
+
+if (!program.args.length) {
+  program.help();
+}
