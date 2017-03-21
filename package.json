@@ -1,6 +1,6 @@
 {
   "name": "svidgendiff",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "hexlet project-lvl2",
   "bin": {
     "gendiff": "dist/bin/genDiff.js"
